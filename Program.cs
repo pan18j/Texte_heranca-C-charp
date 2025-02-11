@@ -50,6 +50,8 @@ namespace MinhaClass
             volkswagen.farol_alto_carro();
             volkswagen.Ligar_farois = false;
             volkswagen.farol_alto_carro();
+            volkswagen.Liga = false;
+            volkswagen.farol_alto_carro();
 
 
    
