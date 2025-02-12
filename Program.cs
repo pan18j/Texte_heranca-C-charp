@@ -13,14 +13,14 @@ namespace MinhaClass
             // Execicio, cria uma class mãe que sera Herdado por uma class (Carro) e class (Aviao)
             // que terão atributos e metodos emcomun.
 
-            Aviao fab = new Aviao();
+            Aviao fab = new Aviao(false);
             fab.Transporte = "jato-774";
             fab.Acelerar = true;
             fab.Abrir_porta = true;
             fab.Liga = true;
             fab.Ligar_farois = true;
             fab.Acelerar = false;
-            fab.Freiar = true;
+            fab.Brecar = true;
             fab.Abrir_porta = true;
             fab.Acelerar = false;
             fab.Acelerar = true;
@@ -32,16 +32,16 @@ namespace MinhaClass
 
             Console.WriteLine("-----------------------------------");
 
-            Carro volkswagen = new Carro();
+            Carro volkswagen = new Carro(false);
             volkswagen.Transporte = "Fosca";
-            volkswagen.Freiar = true;
+            volkswagen.Brecar = true;
             volkswagen.Liga = true;
             volkswagen.Ligar_farois = true;
             volkswagen.Abrir_porta = true;
             volkswagen.Acelerar = true;
             volkswagen.Abrir_porta = false;
             volkswagen.Acelerar = true;
-            volkswagen.Freiar = true;
+            volkswagen.Brecar = true;
             volkswagen.Ligar_farois = false;
             volkswagen.farol_alto_carro();
             volkswagen.Ligar_farois = true;

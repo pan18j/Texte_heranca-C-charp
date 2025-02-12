@@ -32,6 +32,11 @@ public class Carro : Class_base
         }
 
     }
+    public Carro(bool farol) : base(false,false,false,false,false)
+    {
+        farol_alto = farol;
+
+    }
 
 
 

@@ -26,7 +26,12 @@ public class Aviao : Class_base
 
         }
 
+    }
+    public Aviao(bool liberada) : base(false, false, false, false,false)
+    {
+        pista_liberada = liberada; 
 
     }
+
 
 }

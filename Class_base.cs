@@ -5,7 +5,7 @@ public class Class_base
 
     private bool liga;
     private bool abrir_porta;
-    private bool freiar;
+    private bool brecar;
     private bool ligar_farois;
     private bool acelerar;
     private string tranporte = string.Empty; 
@@ -80,7 +80,7 @@ public class Class_base
             if(liga is true && abrir_porta is false)
             {
                 acelerar = value;
-                if(acelerar is true && freiar is false)
+                if(acelerar is true && brecar is false)
                 {
                     Console.WriteLine($"O {tranporte} esta acelerando!");
 
@@ -101,14 +101,14 @@ public class Class_base
             }
         }
     }
-    public bool Freiar
+    public bool Brecar
     {
-        get{return freiar;}
+        get{return brecar;}
         set
         {
             if(acelerar is true)
             {
-                freiar = value;
+                brecar = value;
                 Console.WriteLine($"O {tranporte} esta freiando!");
 
             }
@@ -119,6 +119,15 @@ public class Class_base
 
             }
         }
+    }
+    public Class_base(bool ligado, bool abrir_porta, bool brecar, bool ligarfarol, bool acelerar)
+    {
+        liga = ligado;
+        this.abrir_porta = abrir_porta;
+        this.brecar = brecar;
+        ligar_farois = ligarfarol;
+        this.acelerar = acelerar;
+ 
     }
 
 
