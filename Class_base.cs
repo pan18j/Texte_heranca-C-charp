@@ -8,7 +8,7 @@ public class Class_base
     private bool brecar;
     private bool ligar_farois;
     private bool acelerar;
-    private string tranporte = string.Empty; 
+    private string? tranporte; 
 
     public string Transporte
     {
